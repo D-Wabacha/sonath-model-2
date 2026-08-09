@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Sonath</title>
+<meta name="description" content="Web development, custom systems, and technical consulting for established businesses.">
+
+<!-- Fonts: Space Grotesk (display/headings) + Inter (body). Two weights only: 400 regular, 500 medium. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<!-- =========================================================
+     1. HEADER
+     ========================================================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Sonath home">
+      <!-- Replace /assets/logo-mark.svg with your own file to update the mark everywhere -->
+      <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
+      <!-- Replace /assets/wordmark.svg with your own file to update the wordmark everywhere -->
+      <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Primary mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html" aria-current="page">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+</div>
+
+
+<!-- =========================================================
+     2. INTERIOR HERO
+     ========================================================= -->
+<section class="interior-hero">
+  <div class="container">
+    <p class="hero-eyebrow">Services</p>
+    <h1>Three ways we work with established businesses.</h1>
+    <p>Each engagement is scoped around what you actually need, not a fixed package.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     3. SERVICE DETAIL LIST
+     ========================================================= -->
+<section class="section">
+  <div class="container">
+    <div class="service-detail-list">
+
+      <div class="service-detail">
+        <div>
+          <span class="index">01</span>
+          <h3>Web development</h3>
+        </div>
+        <div class="service-detail-body">
+          <p>Customer-facing websites and web applications built for speed, accessibility, and long-term maintainability rather than a one-off launch.</p>
+          <div class="service-includes">
+            <span>Marketing sites &amp; product pages</span>
+            <span>Web application front-ends</span>
+            <span>Performance &amp; accessibility audits</span>
+            <span>Ongoing maintenance &amp; updates</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail">
+        <div>
+          <span class="index">02</span>
+          <h3>Custom systems</h3>
+        </div>
+        <div class="service-detail-body">
+          <p>Internal tools, dashboards, and platforms built around your existing workflows, so your team adapts the software to fit you, not the other way around.</p>
+          <div class="service-includes">
+            <span>Internal tools &amp; dashboards</span>
+            <span>Workflow &amp; process automation</span>
+            <span>Data migration &amp; system integration</span>
+            <span>API development</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-detail">
+        <div>
+          <span class="index">03</span>
+          <h3>Consulting</h3>
+        </div>
+        <div class="service-detail-body">
+          <p>Technical direction for teams deciding what to build, what to buy, and how to structure the systems that will carry the business forward.</p>
+          <div class="service-includes">
+            <span>Architecture &amp; technology strategy</span>
+            <span>Build vs. buy evaluation</span>
+            <span>Technical due diligence</span>
+            <span>Vendor &amp; tooling selection</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     6. FINAL CTA
+     ========================================================= -->
+<section class="section final-cta">
+  <div class="container">
+    <h2>Ready to talk?</h2>
+    <a href="contact.html" class="btn btn-filled-gold">Start a project</a>
+  </div>
+</section>
+
+<!-- =========================================================
+     7. FOOTER
+     ========================================================= -->
+<footer class="site-footer footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="logo" aria-label="Sonath home">
+        <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
+        <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+      </a>
+      <div class="footer-contact">
+        <a href="mailto:sonathsolutions@gmail.com"><span class="label">Email</span> sonathsolutions@gmail.com</a>
+        <a href="tel:+254768426579"><span class="label">Call</span> +254 768 426 579</a>
+        <a href="https://wa.me/254768426579" target="_blank" rel="noopener"><span class="label">WhatsApp</span> +254 768 426 579</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul class="footer-links">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <div class="footer-meta">
+        <p class="footer-copy">&copy; 2026 Sonath. All rights reserved.</p>
+        <p class="footer-credit">Built by Davis Wabacha &amp; Wayne Wonder.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/contact-form.js"></script>
+</body>
+</html>

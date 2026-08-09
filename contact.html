@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Sonath</title>
+<meta name="description" content="Get in touch with Sonath by email, phone, WhatsApp, or the contact form.">
+
+<!-- Fonts: Space Grotesk (display/headings) + Inter (body). Two weights only: 400 regular, 500 medium. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+<!-- =========================================================
+     1. HEADER
+     ========================================================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Sonath home">
+      <!-- Replace /assets/logo-mark.svg with your own file to update the mark everywhere -->
+      <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
+      <!-- Replace /assets/wordmark.svg with your own file to update the wordmark everywhere -->
+      <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Primary mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+</div>
+
+
+<!-- =========================================================
+     2. INTERIOR HERO
+     ========================================================= -->
+<section class="interior-hero">
+  <div class="container">
+    <p class="hero-eyebrow">Contact</p>
+    <h1>Tell us about the problem you're solving.</h1>
+    <p>Reach out directly, or send a few details through the form below.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     3. CONTACT DETAILS + FORM
+     ========================================================= -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-details">
+        <div class="contact-detail-item">
+          <span class="label">Email</span>
+          <a href="mailto:sonathsolutions@gmail.com">sonathsolutions@gmail.com</a>
+        </div>
+        <div class="contact-detail-item">
+          <span class="label">Call</span>
+          <a href="tel:+254768426579">+254 768 426 579</a>
+        </div>
+        <div class="contact-detail-item">
+          <span class="label">WhatsApp</span>
+          <a href="https://wa.me/254768426579" target="_blank" rel="noopener">+254 768 426 579</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-filled-gold">Send message</button>
+        <p class="form-note">This opens your email app with your message pre-filled and addressed to sonathsolutions@gmail.com — nothing is submitted directly from this page.</p>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     7. FOOTER
+     ========================================================= -->
+<footer class="site-footer footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="logo" aria-label="Sonath home">
+        <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
+        <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+      </a>
+      <div class="footer-contact">
+        <a href="mailto:sonathsolutions@gmail.com"><span class="label">Email</span> sonathsolutions@gmail.com</a>
+        <a href="tel:+254768426579"><span class="label">Call</span> +254 768 426 579</a>
+        <a href="https://wa.me/254768426579" target="_blank" rel="noopener"><span class="label">WhatsApp</span> +254 768 426 579</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <ul class="footer-links">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <div class="footer-meta">
+        <p class="footer-copy">&copy; 2026 Sonath. All rights reserved.</p>
+        <p class="footer-credit">Built by Davis Wabacha &amp; Wayne Wonder.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/contact-form.js"></script>
+</body>
+</html>
