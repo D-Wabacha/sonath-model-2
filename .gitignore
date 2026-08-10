@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment & secrets
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency folders (in case build tooling is added later)
+node_modules/
+
+# Netlify local state
+.netlify/
