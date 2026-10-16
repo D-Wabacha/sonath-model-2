@@ -1,109 +1,108 @@
 # Sonath Solutions
 
-**Sonath Solutions** is a software development company focused on building modern, reliable, and practical digital solutions for businesses.
+**Sonath Solutions** is a two-founder software studio in Kenya. We design, build and launch websites and business systems.
 
-This repository contains the source code for the official Sonath Solutions website.
+This repository contains the source code for the official Sonath website.
 
 ## Website
 
 [sonathsolutions.com](https://sonathsolutions.com)
 
-## About
+## Technology
 
-Sonath Solutions provides technology solutions designed to help businesses establish and improve their digital presence.
+The site is plain static HTML, CSS and JavaScript. There is no framework, no build step and nothing to install.
 
-Our services include:
+* HTML5, one file per page
+* One stylesheet: `css/style.css`
+* Three small scripts: `js/main.js` (mobile menu, scroll animations, the live example dashboard and the floating WhatsApp button), `js/contact-form.js` (contact form) and `js/estimate.js` (the price estimator on the pricing page)
+* Fonts loaded from Google Fonts: Archivo, IBM Plex Sans, IBM Plex Mono
+* Hosted on Netlify, which also collects the contact form submissions
 
-* Website development
-* Custom software development
-* Web applications
-* Business automation
-* Database-driven systems
-* Software maintenance and support
-
-## Technology Stack
-
-The website is built using modern web technologies, including:
-
-* HTML5
-* CSS3
-* JavaScript
-* React
-* Vite
-
-Additional technologies and services may be used across individual Sonath Solutions projects depending on their requirements.
-
-## Project Structure
+## Project structure
 
 ```text
-sonath-solutions/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   └── ...
-├── package.json
-├── vite.config.js
-└── README.md
+.
+├── index.html            Home
+├── work.html             Work (case study list and example build)
+├── royal-tavern.html     Case study: Royal Tavern Hotel
+├── wits-garden.html      Case study: Wits Garden Educational Centre
+├── services.html         Services, timelines and starting prices
+├── pricing.html          Website packages, other offers, care plans and the price estimator
+├── hotels.html           Industry page: hotels, lodges and guesthouses
+├── schools.html          Industry page: schools and learning centres
+├── guides.html           List of guides
+├── guide-*.html          The guides (articles) themselves
+├── process.html          The five project stages, with sample documents
+├── about.html            About the studio and founders
+├── contact.html          Contact form and direct contact details
+├── privacy.html          Privacy policy
+├── terms.html            Terms of service
+├── 404.html              Page-not-found page (served automatically by Netlify)
+├── css/style.css         All styles
+├── js/                   Scripts
+├── assets/
+│   ├── brand/            Logo mark, wordmark and app icon (SVG)
+│   ├── icons/            PNG app icons
+│   ├── work/             Screenshots of client sites (WebP)
+│   ├── favicon.ico
+│   └── og-image.png      Preview image for links shared on WhatsApp and social media
+├── manifest.json
+├── robots.txt
+└── sitemap.xml
 ```
 
-## Development
+## Editing
 
-### Prerequisites
+The header and footer are repeated in every HTML file. If you change a navigation link, the phone number or the footer, make the same change in every page.
 
-* Node.js
-* npm
-
-### Installation
-
-Clone the repository:
+Figures that are estimates (prices, timelines, reply times) are marked in the HTML with a `data-estimate` attribute, so they are easy to find:
 
 ```bash
-git clone <repository-url>
+grep -n "data-estimate" *.html
 ```
 
-Navigate to the project directory:
+### Prices
+
+Package prices appear in more than one place. When you change one, update all of them:
+
+* `js/estimate.js`: the numbers the estimator uses (at the top of the file)
+* `pricing.html`: package cards, offers, care plans and the estimator's choice labels
+* `index.html`: the "Pick a starting point" packages and the cost question
+* `services.html`, `hotels.html`, `schools.html` and `guide-website-cost.html`
 
 ```bash
-cd <project-directory>
+grep -n "KES" *.html js/estimate.js
 ```
 
-Install dependencies:
+### Animation
+
+All movement is in `js/main.js` and section 21 of `css/style.css`. It switches off for visitors whose device is set to reduce motion. The floating WhatsApp button is added by `js/main.js`; a page with `<body data-no-wa>` (the contact page) does not show it.
+
+### Adding a guide
+
+Copy one of the `guide-*.html` files, change the title, description, canonical link and the Article data in the `<head>`, then add a card to `guides.html` and a line to `sitemap.xml`.
+
+The dashboard, phone screen and document pictures on the site are drawn in HTML and CSS, not image files. Their text can be edited directly in the page. They are labelled "Example" wherever they appear.
+
+## Running locally
+
+Open `index.html` in a browser, or serve the folder:
 
 ```bash
-npm install
+python3 -m http.server 8000
 ```
 
-Start the development server:
+Then visit `http://localhost:8000`. The contact form only delivers messages on the deployed Netlify site. Locally it shows the fallback message with email and WhatsApp links.
 
-```bash
-npm run dev
-```
+## Contact form
 
-The application will then be available through the local development URL provided by Vite.
-
-## Production Build
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-To preview the production build locally:
-
-```bash
-npm run preview
-```
+The form on `contact.html` uses Netlify Forms. Form detection must be switched on for the site in the Netlify dashboard (Forms, then Enable form detection), and an email notification should be added there so new enquiries arrive in the inbox.
 
 ## Deployment
 
-The website is deployed for public access through a web hosting platform and connected to this repository for deployment and version control.
+The site deploys from this repository through Netlify. The publish directory is the repository root and there is no build command.
 
 ## Contact
-
-For business inquiries and software development services:
 
 **Sonath Solutions**
 

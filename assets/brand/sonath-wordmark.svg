@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1164 100" role="img" aria-label="Sonath">
+  <g fill="none" stroke="#ffffff" stroke-width="15">
+    <path d="M107 7.5H28.75a21.25 21.25 0 0 0 0 42.5H78.25a21.25 21.25 0 0 1 0 42.5H0"/>
+    <rect x="216.5" y="7.5" width="111" height="85" rx="36"/>
+  </g>
+  <g fill="#ffffff">
+    <path d="M445 0h20.07L539 83.13V0h15v100h-20.07L460 16.87V100h-15z"/>
+    <path d="M656 100 707 0h22l51 100h-16.84L718 11.45 672.84 100z"/>
+    <path d="M862 0h99v15h-42v85h-15V15H862z"/>
+    <path d="M1058 0h15v42.5h76V0h15v100h-15V57.5h-76v42.5h-15z"/>
+  </g>
+</svg>

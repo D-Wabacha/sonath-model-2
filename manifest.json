@@ -1,12 +1,12 @@
 {
   "name": "Sonath",
   "short_name": "Sonath",
-  "description": "Software Development & Digital Solutions.",
+  "description": "Websites and business software, designed, built and launched in Kenya.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#242424",
-  "theme_color": "#242424",
+  "background_color": "#151515",
+  "theme_color": "#151515",
   "icons": [
     {
       "src": "assets/icons/icon-192.png",

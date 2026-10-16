@@ -3,20 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy — Sonath</title>
-<meta name="description" content="How Sonath collects, uses, and protects information from this website and the contact form.">
+<title>Privacy policy: Sonath</title>
+<meta name="description" content="How Sonath collects, uses and protects information from this website and the contact form.">
+<link rel="canonical" href="https://sonathsolutions.com/privacy">
 
-<!-- Fonts: Space Grotesk (display/headings) + Inter (body). Two weights only: 400 regular, 500 medium. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sonath">
+<meta property="og:title" content="Privacy policy: Sonath">
+<meta property="og:description" content="How Sonath collects, uses and protects information from this website and the contact form.">
+<meta property="og:url" content="https://sonathsolutions.com/privacy">
+<meta property="og:image" content="https://sonathsolutions.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: Archivo (headings), IBM Plex Sans (text), IBM Plex Mono (labels and figures) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/brand/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#242424">
+<meta name="theme-color" content="#151515">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,9 +36,10 @@
   "alternateName": "Sonath Solutions",
   "url": "https://sonathsolutions.com/",
   "logo": "https://sonathsolutions.com/assets/icons/icon-512.png",
-  "description": "Sonath designs, builds, and launches custom software systems for established businesses.",
+  "description": "Sonath is a two-founder software studio in Kenya that designs, builds and launches websites and business systems.",
   "email": "sonathsolutions@gmail.com",
   "telephone": "+254768426579",
+  "address": { "@type": "PostalAddress", "addressCountry": "KE" },
   "sameAs": [
     "https://www.instagram.com/sonathsolutions"
   ]
@@ -35,132 +47,151 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <!-- =========================================================
-     1. HEADER
+     HEADER (identical on every page)
      ========================================================= -->
 <header class="site-header">
-  <div class="container">
-    <a href="index.html" class="logo" aria-label="Sonath home">
-      <!-- Replace /assets/logo-mark.svg with your own file to update the mark everywhere -->
-      <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
-      <!-- Replace /assets/wordmark.svg with your own file to update the wordmark everywhere -->
-      <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Sonath home">
+      <img class="brand-mark" src="assets/brand/sonath-mark.svg" width="94" height="112" alt="">
+      <img class="brand-word" src="assets/brand/sonath-wordmark.svg" width="1164" height="100" alt="Sonath">
     </a>
-    <div class="nav-right">
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+    <nav class="nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-sm header-cta">Start a project</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <nav aria-label="Primary mobile">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="work.html">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+  <div class="wrap">
+    <nav aria-label="Primary mobile">
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary">Start a project</a>
+  </div>
 </div>
 
-
-<!-- =========================================================
-     2. INTERIOR HERO
-     ========================================================= -->
-<section class="interior-hero">
-  <div class="container">
-    <p class="hero-eyebrow">Legal</p>
+<main id="main">
+<section class="page-hero dark">
+  <div class="wrap">
+    <p class="label">Legal</p>
     <h1>Privacy policy</h1>
   </div>
 </section>
 
-<!-- =========================================================
-     3. LEGAL CONTENT
-     ========================================================= -->
-<section class="section">
-  <div class="container">
-    <div class="legal-content">
-      <p class="updated">Last updated: 9 August 2026</p>
-
+<section class="section white">
+  <div class="wrap">
+    <div class="legal">
+      <p class="updated">Last updated: 13 October 2026</p>
       <h2>Overview</h2>
-      <p>This policy explains what information Sonath collects when you visit this website or get in touch with us, and how that information is used. Sonath is a small software development studio, and we collect the minimum information needed to respond to inquiries and run this website.</p>
+      <p>This policy explains what information Sonath collects when you visit this website or get in touch with us, and how that information is used. Sonath is a small software development studio, and we collect the minimum information needed to respond to enquiries and run this website.</p>
 
       <h2>Information we collect</h2>
       <p>We collect information in two ways:</p>
       <ul>
-        <li>Directly from you, when you contact us by email, phone, WhatsApp, or the contact form on this site. This typically includes your name, email address, phone number if you provide one, and whatever you tell us about your project.</li>
-        <li>Automatically, through standard web server logs (such as IP address, browser type, and pages visited) generated by our hosting provider. We do not currently use analytics or tracking cookies on this site.</li>
+        <li>Directly from you, when you contact us by email, phone, WhatsApp or the contact form on this site. This typically includes your name, email address, phone number if you provide one, and whatever you tell us about your project.</li>
+        <li>Automatically, through standard web server logs (such as IP address, browser type and pages visited) generated by our hosting provider. We do not currently use analytics or tracking cookies on this site.</li>
       </ul>
 
       <h2>How the contact form works</h2>
-      <p>The contact form on this site does not submit your information to a server or database that we control. Submitting it opens your device's email application with your message pre-filled, addressed to sonathsolutions@gmail.com. The information you enter is only transmitted once you send that email, using your own email provider.</p>
+      <p>When you submit the contact form, the details you enter are sent to our hosting provider, Netlify, which stores the submission and forwards it to us by email. Netlify processes this information on our behalf. We do not add you to a mailing list.</p>
+      <p>If the form cannot be sent, the page offers to open your own email application or WhatsApp instead. In that case nothing is transmitted until you choose to send the message yourself.</p>
 
       <h2>How we use your information</h2>
-      <p>We use the information you provide solely to respond to your inquiry, discuss a potential project, and, if we proceed, deliver the work you've engaged us for. We do not sell, rent, or share your information with third parties for marketing purposes.</p>
+      <p>We use the information you provide solely to respond to your enquiry, discuss a potential project and, if we proceed, deliver the work you have engaged us for. We do not sell, rent or share your information with third parties for marketing purposes.</p>
 
-      <h2>Cookies &amp; third-party services</h2>
-      <p>This site loads typefaces from Google Fonts, which may involve your browser making a request to Google's servers. We do not currently use tracking cookies, advertising pixels, or analytics services on this site.</p>
+      <h2>Cookies and third-party services</h2>
+      <p>This site loads typefaces from Google Fonts, which involves your browser making a request to Google's servers. We do not currently use tracking cookies, advertising pixels or analytics services on this site.</p>
 
       <h2>Data retention</h2>
       <p>We retain correspondence and project-related information for as long as reasonably necessary to maintain our business relationship and comply with any legal or accounting obligations, after which it is deleted.</p>
 
       <h2>Your rights</h2>
-      <p>You can ask us at any time what information we hold about you, request a correction, or ask us to delete it, by emailing sonathsolutions@gmail.com.</p>
+      <p>You can ask us at any time what information we hold about you, request a correction, or ask us to delete it, by emailing <a href="mailto:sonathsolutions@gmail.com">sonathsolutions@gmail.com</a>.</p>
 
       <h2>Changes to this policy</h2>
       <p>We may update this policy from time to time as our practices change. The date at the top of this page reflects the most recent update.</p>
 
       <h2>Contact</h2>
-      <p>Questions about this policy can be sent to sonathsolutions@gmail.com.</p>
+      <p>Questions about this policy can be sent to <a href="mailto:sonathsolutions@gmail.com">sonathsolutions@gmail.com</a>.</p>
     </div>
   </div>
 </section>
 
+</main>
+
 <!-- =========================================================
-     7. FOOTER
+     FOOTER (identical on every page)
      ========================================================= -->
-<footer class="site-footer footer">
-  <div class="container">
-    <div class="footer-top">
-      <a href="index.html" class="logo" aria-label="Sonath home">
-        <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
-        <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
-      </a>
-      <div class="footer-contact">
-        <a href="mailto:sonathsolutions@gmail.com"><span class="label">Email</span> sonathsolutions@gmail.com</a>
-        <a href="tel:+254768426579"><span class="label">Call</span> +254 768 426 579</a>
-        <a href="https://wa.me/254768426579" target="_blank" rel="noopener"><span class="label">WhatsApp</span> +254 768 426 579</a>
-        <a href="https://www.instagram.com/sonathsolutions" target="_blank" rel="noopener"><span class="label">Instagram</span> @sonathsolutions</a>
-        <a href="https://www.linkedin.com/in/davis-wabacha" target="_blank" rel="noopener"><span class="label">LinkedIn</span> Davis Wabacha</a>
+<footer class="site-footer dark">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="Sonath home">
+          <img class="brand-mark" src="assets/brand/sonath-mark.svg" width="94" height="112" alt="">
+          <img class="brand-word" src="assets/brand/sonath-wordmark.svg" width="1164" height="100" alt="Sonath">
+        </a>
+        <p class="footer-tag">Design. Build. Launch.</p>
+        <p class="muted">A two-founder software studio in Kenya. Websites and business systems, built by the people you talk to.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Site</h2>
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Who we build for</h2>
+        <ul>
+          <li><a href="hotels.html">Hotels and lodges</a></li>
+          <li><a href="schools.html">Schools</a></li>
+          <li><a href="services.html#systems">Shops and suppliers</a></li>
+          <li><a href="guides.html">Guides</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:sonathsolutions@gmail.com">sonathsolutions@gmail.com</a></li>
+          <li><a href="tel:+254768426579">+254 768 426 579</a></li>
+          <li><a href="https://wa.me/254768426579" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/sonathsolutions" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/davis-wabacha" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <ul class="footer-links">
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-      </ul>
-      <div class="footer-meta">
-        <p class="footer-copy">&copy; 2026 Sonath. All rights reserved.</p>
-        <p class="footer-credit">Built by Davis Wabacha &amp; Wayne Wonder.</p>
-      </div>
+      <p>&copy; 2026 Sonath Solutions. Built by Davis Wabacha &amp; Wayne Wonder.</p>
+      <p><a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a></p>
     </div>
   </div>
 </footer>
 
-
 <script src="js/main.js"></script>
-<script src="js/contact-form.js"></script>
 </body>
 </html>

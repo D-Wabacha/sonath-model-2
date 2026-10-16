@@ -3,20 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sonath Solutions - Software Development & Digital Solutions</title>
-<meta name="description" content="Sonath designs, builds, and launches custom software systems for established businesses.">
+<title>Sonath: websites and business software, built in Kenya</title>
+<meta name="description" content="Sonath is a two-founder software studio in Kenya. We design, build and launch websites and business systems, with a fixed price and weekly updates.">
+<link rel="canonical" href="https://sonathsolutions.com/">
 
-<!-- Fonts: Space Grotesk (display/headings) + Inter (body). Two weights only: 400 regular, 500 medium. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sonath">
+<meta property="og:title" content="Sonath: websites and business software, built in Kenya">
+<meta property="og:description" content="Sonath is a two-founder software studio in Kenya. We design, build and launch websites and business systems, with a fixed price and weekly updates.">
+<meta property="og:url" content="https://sonathsolutions.com/">
+<meta property="og:image" content="https://sonathsolutions.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: Archivo (headings), IBM Plex Sans (text), IBM Plex Mono (labels and figures) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" href="assets/favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/brand/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#242424">
+<meta name="theme-color" content="#151515">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -25,9 +36,10 @@
   "alternateName": "Sonath Solutions",
   "url": "https://sonathsolutions.com/",
   "logo": "https://sonathsolutions.com/assets/icons/icon-512.png",
-  "description": "Sonath designs, builds, and launches custom software systems for established businesses.",
+  "description": "Sonath is a two-founder software studio in Kenya that designs, builds and launches websites and business systems.",
   "email": "sonathsolutions@gmail.com",
   "telephone": "+254768426579",
+  "address": { "@type": "PostalAddress", "addressCountry": "KE" },
   "sameAs": [
     "https://www.instagram.com/sonathsolutions"
   ]
@@ -35,173 +47,573 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
 <!-- =========================================================
-     1. HEADER
+     HEADER (identical on every page)
      ========================================================= -->
 <header class="site-header">
-  <div class="container">
-    <a href="index.html" class="logo" aria-label="Sonath home">
-      <!-- Replace /assets/logo-mark.svg with your own file to update the mark everywhere -->
-      <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
-      <!-- Replace /assets/wordmark.svg with your own file to update the wordmark everywhere -->
-      <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Sonath home">
+      <img class="brand-mark" src="assets/brand/sonath-mark.svg" width="94" height="112" alt="">
+      <img class="brand-word" src="assets/brand/sonath-wordmark.svg" width="1164" height="100" alt="Sonath">
     </a>
-    <div class="nav-right">
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="services.html">Services</a>
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+    <nav class="nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary btn-sm header-cta">Start a project</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <nav aria-label="Primary mobile">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="services.html">Services</a>
-    <a href="work.html">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+  <div class="wrap">
+    <nav aria-label="Primary mobile">
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary">Start a project</a>
+  </div>
 </div>
 
+<main id="main">
 <!-- =========================================================
-     2. HERO
+     HERO
      ========================================================= -->
-<section class="hero" id="top">
-  <div class="container">
-    <p class="hero-eyebrow">Design. Build. Launch.</p>
-    <h1>Custom software built to work the way your business does.</h1>
-    <p>We design, build, and launch software systems for established businesses running on processes that off-the-shelf tools were never built for.</p>
-    <a href="contact.html" class="btn btn-outline-gold">Start a project</a>
+<section class="hero dark">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="label">Design. Build. Launch.</p>
+      <h1>Websites and business software, built by the two people you talk to.</h1>
+      <p class="lede">Sonath is a two-founder software studio in Kenya. You get a fixed price before work starts, an update every week, and the full source code at handover.</p>
+      <div class="btn-row">
+        <a href="contact.html" class="btn btn-primary">Start a project</a>
+        <a href="work.html" class="btn btn-ghost">See our work</a>
+      </div>
+    </div>
+    <figure>
+      <div class="device-stack">
+        <div class="browser">
+          <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">Royal Tavern Hotel, Othaya</span></div>
+          <img src="assets/work/royal-tavern-home.webp" width="1440" height="900" alt="Home page of the Royal Tavern Hotel website, built by Sonath" decoding="async">
+        </div>
+        <div class="phone">
+          <img src="assets/work/wits-garden-mobile.webp" width="780" height="1688" alt="Wits Garden Educational Centre website on a phone, built by Sonath" decoding="async">
+        </div>
+      </div>
+      <figcaption>Recent work: Royal Tavern Hotel, Othaya, and Wits Garden Educational Centre, Nairobi.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- =========================================================
-     3. WHAT WE DO
+     WHAT TO EXPECT
      ========================================================= -->
-<section class="section" id="services">
-  <div class="container">
+<section class="section white">
+  <div class="wrap">
+    <div class="section-head single">
+      <h2>What you can expect on every project</h2>
+    </div>
+    <ul class="expect">
+      <li><h3>A fixed price</h3><p>Scope, timeline and cost are agreed in writing before any work starts.</p></li>
+      <li><h3>An update every Friday</h3><p>A short written report, plus a private link where you can try the latest version.</p></li>
+      <li><h3>You own everything</h3><p>Source code, logins and documentation are transferred to you once the project is paid.</p></li>
+      <li><h3>No middlemen</h3><p>The founders you meet on the first call are the ones who design and build your project.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================
+     RECENT WORK
+     ========================================================= -->
+<section class="section">
+  <div class="wrap">
     <div class="section-head">
-      <p class="section-eyebrow">What we do</p>
-      <h2>Three ways we help</h2>
+      <h2>Recent work</h2>
+      <p>Two sites we designed, built and launched. Both are live, so you can open them and judge for yourself.</p>
     </div>
-    <div class="services">
-      <div class="service-card">
-        <span class="index">01</span>
-        <h3>Web development</h3>
-        <p>Customer-facing sites and web applications built to load fast and hold up under real traffic.</p>
-      </div>
-      <div class="service-card">
-        <span class="index">02</span>
-        <h3>Custom systems</h3>
-        <p>Internal tools and platforms shaped around how your business actually operates.</p>
-      </div>
-      <div class="service-card">
-        <span class="index">03</span>
-        <h3>Consulting</h3>
-        <p>Technical direction on architecture, vendor choices, and what to build versus buy.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================
-     4. HOW WE WORK — light blue band
-     ========================================================= -->
-<section class="section process" id="process">
-  <div class="container">
-    <div class="section-head">
-      <p class="section-eyebrow">How we work</p>
-      <h2>A fixed process, start to finish</h2>
-    </div>
-    <div class="process-line">
-      <div class="process-step">
-        <span class="num">01</span>
-        <span class="label">Discovery</span>
-      </div>
-      <div class="process-step">
-        <span class="num">02</span>
-        <span class="label">Scoping</span>
-      </div>
-      <div class="process-step">
-        <span class="num">03</span>
-        <span class="label">Build</span>
-      </div>
-      <div class="process-step">
-        <span class="num">04</span>
-        <span class="label">Handover</span>
-      </div>
-      <div class="process-step">
-        <span class="num">05</span>
-        <span class="label">Support</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =========================================================
-     5. FOUNDERS TEASER
-     ========================================================= -->
-<section class="section founders" id="founders">
-  <div class="container">
-    <p>Sonath is run by two founders — Davis Wabacha, CEO, and Wayne Wonder, CFO — who work directly on every engagement rather than handing it off.</p>
-    <a href="about.html" class="founders-link">Meet the founders →</a>
-  </div>
-</section>
-
-<!-- =========================================================
-     6. FINAL CTA
-     ========================================================= -->
-<section class="section final-cta" id="contact">
-  <div class="container">
-    <h2>Ready to talk?</h2>
-    <a href="https://wa.me/254768426579?text=Hi%20Sonath%2C%20I%27d%20like%20to%20book%20a%20call%20to%20discuss%20a%20project." class="btn btn-filled-gold" target="_blank" rel="noopener">Book a call</a>
-  </div>
-</section>
-
-<!-- =========================================================
-     7. FOOTER
-     ========================================================= -->
-<footer class="site-footer footer">
-  <div class="container">
-    <div class="footer-top">
-      <a href="index.html" class="logo" aria-label="Sonath home">
-        <img class="logo-mark" src="assets/images/sonath_symbol_vector.svg" alt="Sonath mark">
-        <img class="logo-word-img" src="assets/images/sonath_wordmark_vector.svg" alt="Sonath">
+    <article class="case">
+      <a class="case-media" href="royal-tavern.html" aria-label="Royal Tavern Hotel case study">
+        <div class="device-stack">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">Royal Tavern Hotel, Othaya</span></div>
+            <img src="assets/work/royal-tavern-events.webp" width="1440" height="900" alt="Conferences and events section of the Royal Tavern Hotel website" loading="lazy" decoding="async">
+          </div>
+          <div class="phone">
+            <img src="assets/work/royal-tavern-mobile.webp" width="780" height="1688" alt="Royal Tavern Hotel home page on a phone" loading="lazy" decoding="async">
+          </div>
+        </div>
       </a>
-      <div class="footer-contact">
-        <a href="mailto:sonathsolutions@gmail.com"><span class="label">Email</span> sonathsolutions@gmail.com</a>
-        <a href="tel:+254768426579"><span class="label">Call</span> +254 768 426 579</a>
-        <a href="https://wa.me/254768426579" target="_blank" rel="noopener"><span class="label">WhatsApp</span> +254 768 426 579</a>
-        <a href="https://www.instagram.com/sonathsolutions" target="_blank" rel="noopener"><span class="label">Instagram</span> @sonathsolutions</a>
-        <a href="https://www.linkedin.com/in/davis-wabacha" target="_blank" rel="noopener"><span class="label">LinkedIn</span> Davis Wabacha</a>
+      <div class="case-body">
+        <p class="label">Hotel website</p>
+        <h3 class="case-title"><a href="royal-tavern.html">Royal Tavern Hotel</a></h3>
+        <p>A website for a hotel in Othaya. Guests can see the rooms, dining, gardens and conference spaces, then call or send a WhatsApp message to book.</p>
+        <ul class="case-tags">
+          <li>Design</li>
+          <li>Development</li>
+          <li>Launch</li>
+          <li>React</li>
+        </ul>
+        <div class="case-links">
+          <a class="link arrow" href="royal-tavern.html">Read the case study</a>
+          <a class="link" href="https://thetroyaltavern.netlify.app/" target="_blank" rel="noopener">Visit the live site</a>
+        </div>
+      </div>
+    </article>
+    <article class="case flip">
+      <a class="case-media" href="wits-garden.html" aria-label="Wits Garden Educational Centre case study">
+        <div class="device-stack">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">Wits Garden Educational Centre</span></div>
+            <img src="assets/work/wits-garden-services.webp" width="1440" height="900" alt="Classes and services page of the Wits Garden Educational Centre website" loading="lazy" decoding="async">
+          </div>
+          <div class="phone">
+            <img src="assets/work/wits-garden-mobile.webp" width="780" height="1688" alt="Wits Garden classes page on a phone" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </a>
+      <div class="case-body">
+        <p class="label">School website</p>
+        <h3 class="case-title"><a href="wits-garden.html">Wits Garden Educational Centre</a></h3>
+        <p>A five-page website for a community school in Nairobi. Parents can see the classes and ask about enrolment, and supporters can find out how to help.</p>
+        <ul class="case-tags">
+          <li>Design</li>
+          <li>Development</li>
+          <li>Launch</li>
+          <li>Five pages</li>
+        </ul>
+        <div class="case-links">
+          <a class="link arrow" href="wits-garden.html">Read the case study</a>
+          <a class="link" href="https://witsgardeneducationalcentre.netlify.app/" target="_blank" rel="noopener">Visit the live site</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- =========================================================
+     WHAT WE BUILD
+     ========================================================= -->
+<section class="section white">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we build</h2>
+      <p>Three kinds of work. Each one ends with something you can open, use and keep.</p>
+    </div>
+    <div class="services-3">
+      <article class="service-card">
+        <div class="thumb pad">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">Royal Tavern Hotel, Othaya</span></div>
+            <img src="assets/work/royal-tavern-about.webp" width="1440" height="900" alt="" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div>
+          <h3>Websites</h3>
+          <p>A site that explains what you do and makes it easy to reach you by phone, WhatsApp or form. Designed for phones first.</p>
+        </div>
+        <a class="link arrow" href="services.html#websites">About websites</a>
+      </article>
+      <article class="service-card">
+        <div class="thumb pad">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">orders.example.co.ke</span></div>
+            <div class="ui" role="img" aria-label="Example screen: an orders and stock dashboard showing this week's orders, unpaid invoices, low stock items and a list of recent orders.">
+              <div class="ui-in" aria-hidden="true">
+                <div class="ui-side">
+                  <div class="ui-org"><i>E</i>Example Hardware Ltd</div>
+                  <div class="ui-nav"><span class="on">Overview</span><span>Orders</span><span>Stock</span><span>Customers</span><span>Invoices</span><span>Reports</span></div>
+                  <div class="ui-user">Signed in as Grace<br>Sales desk</div>
+                </div>
+                <div class="ui-main">
+                  <div class="ui-top">
+                    <div class="ui-title">Overview <small>Week of 5 to 11 October</small></div>
+                    <span class="ui-btn">+ New order</span>
+                  </div>
+                  <div class="ui-kpis">
+                    <div class="ui-card ui-kpi"><span>Orders this week</span><b>128</b><em class="ui-up">12% up on last week</em></div>
+                    <div class="ui-card ui-kpi"><span>Waiting for dispatch</span><b>14</b><em>3 due today</em></div>
+                    <div class="ui-card ui-kpi"><span>Unpaid invoices</span><b>KES 412,600</b><em class="ui-bad">9 customers</em></div>
+                    <div class="ui-card ui-kpi"><span>Low stock</span><b>7 items</b><em class="ui-warn">2 below reorder level</em></div>
+                  </div>
+                  <div class="ui-cols">
+                    <div class="ui-card">
+                      <div class="ui-h">Orders per day <small>128 total</small></div>
+                      <div class="ui-chart"><i style="height:67%" data-v="18"></i><i style="height:81%" data-v="22"></i><i style="height:56%" data-v="15"></i><i style="height:100%" data-v="27"></i><i style="height:89%" data-v="24"></i><i style="height:59%" data-v="16"></i><i class="today" style="height:22%" data-v="6"></i></div>
+                      <div class="ui-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                    </div>
+                    <div class="ui-card">
+                      <div class="ui-h">Low stock <small>7 items</small></div>
+                      <div class="ui-stock">
+                        <div><span>Roofing nails 3&quot;</span><span>6 boxes</span><u><i style="width:8%"></i></u></div>
+                        <div><span>Cement 50 kg</span><span>18 bags</span><u><i style="width:15%"></i></u></div>
+                        <div><span>White paint 20 L</span><span>9 tins</span><u><i class="mid" style="width:24%"></i></u></div>
+                        <div><span>PVC pipe 1/2&quot;</span><span>40 pieces</span><u><i class="mid" style="width:31%"></i></u></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-card">
+                    <div class="ui-h">Recent orders <small>View all</small></div>
+                    <table class="ui-table">
+                      <tr><th>Order</th><th>Customer</th><th>Items</th><th class="num">Total (KES)</th><th>Payment</th><th>Status</th></tr>
+                      <tr><td>#1048</td><td>Kamau Builders</td><td>12</td><td class="num">84,500</td><td><span class="pill ok">Paid, M-Pesa</span></td><td><span class="pill grey">Dispatched</span></td></tr>
+                      <tr><td>#1047</td><td>Njeri Hardware</td><td>4</td><td class="num">18,200</td><td><span class="pill warn">Pending</span></td><td><span class="pill grey">Packing</span></td></tr>
+                      <tr><td>#1046</td><td>Otieno &amp; Sons</td><td>9</td><td class="num">46,750</td><td><span class="pill ok">Paid, bank</span></td><td><span class="pill grey">Dispatched</span></td></tr>
+                      <tr><td>#1045</td><td>Wanjiru Supplies</td><td>2</td><td class="num">6,400</td><td><span class="pill bad">Overdue</span></td><td><span class="pill grey">Delivered</span></td></tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Business systems</h3>
+          <p>Software for orders, stock, bookings, fees or records, shaped around how your team already works.</p>
+        </div>
+        <a class="link arrow" href="services.html#systems">About business systems</a>
+      </article>
+      <article class="service-card">
+        <div class="thumb pad">
+          <div class="doc" role="img" aria-label="Example document: a written recommendation comparing three options, keeping spreadsheets, buying off-the-shelf software, or a custom build.">
+            <div class="doc-in" aria-hidden="true">
+              <div class="doc-head"><img src="assets/brand/sonath-mark-dark.svg" width="94" height="112" alt=""><div class="doc-kind"><b>Recommendation</b>Technical review</div></div>
+              <div class="doc-title">Build, buy or keep?</div>
+              <div class="doc-sub">Review for Example Hardware Ltd</div>
+              <div class="doc-h">Options compared</div>
+              <div class="doc-rows">
+                <div><span>A. Keep the spreadsheets</span><span>No cost</span></div>
+                <div><span>B. Off-the-shelf stock app</span><span>KES 180,000 a year</span></div>
+                <div class="total"><span>C. Custom system (recommended)</span><span>KES 400,000 once</span></div>
+              </div>
+              <div class="doc-h">Why option C</div>
+              <ul class="doc-list">
+                <li>Handles credit accounts, which option B cannot</li>
+                <li>Pays for itself against option B in under 3 years</li>
+                <li>Your data stays in a system you own</li>
+              </ul>
+              <div class="doc-h">Risks to plan for</div>
+              <ul class="doc-list todo">
+                <li>Staff need two training sessions</li>
+                <li>Old records must be cleaned before import</li>
+              </ul>
+              <div class="doc-foot"><span>Costs are estimates</span><span>Page 1 of 4</span></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Technical advice</h3>
+          <p>A written second opinion before you spend: what to build, what to buy, and what it should cost.</p>
+        </div>
+        <a class="link arrow" href="services.html#advice">About technical advice</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     EXAMPLE SYSTEM
+     ========================================================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What a business system looks like</h2>
+      <p>This example is an orders and stock system for a hardware supplier. The office sees the whole week on one screen. Sales staff take orders on their phones.</p>
+    </div>
+    <figure>
+      <div class="example">
+        <div class="browser">
+          <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">orders.example.co.ke</span></div>
+          <div class="ui" role="img" aria-label="Example screen: an orders and stock dashboard showing this week's orders, unpaid invoices, low stock items and a list of recent orders.">
+            <div class="ui-in" aria-hidden="true">
+              <div class="ui-side">
+                <div class="ui-org"><i>E</i>Example Hardware Ltd</div>
+                <div class="ui-nav"><span class="on">Overview</span><span>Orders</span><span>Stock</span><span>Customers</span><span>Invoices</span><span>Reports</span></div>
+                <div class="ui-user">Signed in as Grace<br>Sales desk</div>
+              </div>
+              <div class="ui-main">
+                <div class="ui-top">
+                  <div class="ui-title">Overview <small>Week of 5 to 11 October</small></div>
+                  <span class="ui-btn">+ New order</span>
+                </div>
+                <div class="ui-kpis">
+                  <div class="ui-card ui-kpi"><span>Orders this week</span><b>128</b><em class="ui-up">12% up on last week</em></div>
+                  <div class="ui-card ui-kpi"><span>Waiting for dispatch</span><b>14</b><em>3 due today</em></div>
+                  <div class="ui-card ui-kpi"><span>Unpaid invoices</span><b>KES 412,600</b><em class="ui-bad">9 customers</em></div>
+                  <div class="ui-card ui-kpi"><span>Low stock</span><b>7 items</b><em class="ui-warn">2 below reorder level</em></div>
+                </div>
+                <div class="ui-cols">
+                  <div class="ui-card">
+                    <div class="ui-h">Orders per day <small>128 total</small></div>
+                    <div class="ui-chart"><i style="height:67%" data-v="18"></i><i style="height:81%" data-v="22"></i><i style="height:56%" data-v="15"></i><i style="height:100%" data-v="27"></i><i style="height:89%" data-v="24"></i><i style="height:59%" data-v="16"></i><i class="today" style="height:22%" data-v="6"></i></div>
+                    <div class="ui-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                  </div>
+                  <div class="ui-card">
+                    <div class="ui-h">Low stock <small>7 items</small></div>
+                    <div class="ui-stock">
+                      <div><span>Roofing nails 3&quot;</span><span>6 boxes</span><u><i style="width:8%"></i></u></div>
+                      <div><span>Cement 50 kg</span><span>18 bags</span><u><i style="width:15%"></i></u></div>
+                      <div><span>White paint 20 L</span><span>9 tins</span><u><i class="mid" style="width:24%"></i></u></div>
+                      <div><span>PVC pipe 1/2&quot;</span><span>40 pieces</span><u><i class="mid" style="width:31%"></i></u></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui-card">
+                  <div class="ui-h">Recent orders <small>View all</small></div>
+                  <table class="ui-table">
+                    <tr><th>Order</th><th>Customer</th><th>Items</th><th class="num">Total (KES)</th><th>Payment</th><th>Status</th></tr>
+                    <tr><td>#1048</td><td>Kamau Builders</td><td>12</td><td class="num">84,500</td><td><span class="pill ok">Paid, M-Pesa</span></td><td><span class="pill grey">Dispatched</span></td></tr>
+                    <tr><td>#1047</td><td>Njeri Hardware</td><td>4</td><td class="num">18,200</td><td><span class="pill warn">Pending</span></td><td><span class="pill grey">Packing</span></td></tr>
+                    <tr><td>#1046</td><td>Otieno &amp; Sons</td><td>9</td><td class="num">46,750</td><td><span class="pill ok">Paid, bank</span></td><td><span class="pill grey">Dispatched</span></td></tr>
+                    <tr><td>#1045</td><td>Wanjiru Supplies</td><td>2</td><td class="num">6,400</td><td><span class="pill bad">Overdue</span></td><td><span class="pill grey">Delivered</span></td></tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="pui" role="img" aria-label="Example screen: taking a new order on a phone, with three items and a total of 32,000 shillings.">
+            <div class="pui-in" aria-hidden="true">
+              <div class="pui-bar"><b>New order</b><span>#1049</span></div>
+              <div class="pui-body">
+                <div class="pui-field"><small>Customer</small><b>Kamau Builders</b></div>
+                <div class="pui-item"><b>Cement 50 kg</b><small>KES 850 per bag</small><span class="pui-qty"><i>&minus;</i>20<i>+</i></span></div>
+                <div class="pui-item"><b>Roofing nails 3&quot;</b><small>KES 1,200 per box</small><span class="pui-qty"><i>&minus;</i>5<i>+</i></span></div>
+                <div class="pui-item"><b>Binding wire 25 kg</b><small>KES 4,500 per roll</small><span class="pui-qty"><i>&minus;</i>2<i>+</i></span></div>
+                <div class="pui-add">+ Add another item</div>
+              </div>
+              <div class="pui-foot">
+                <div class="pui-total"><span>Total</span><span>KES 32,000</span></div>
+                <div class="pui-send">Send order</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption><span class="badge">Example</span> Screens drawn to show the kind of system we build. Names and figures are illustrative.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- =========================================================
+     HOW A PROJECT RUNS
+     ========================================================= -->
+<section class="section dark">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How a project runs</h2>
+      <p>Five stages, in the same order every time. At each one you receive something in writing, so you always know where things stand.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Discovery</h3><span class="when" data-estimate>Week 1</span><p>We learn how the work gets done today and where it goes wrong.</p></li>
+      <li><h3>Proposal</h3><span class="when" data-estimate>Week 1 to 2</span><p>You get the scope, timeline and a fixed price in writing.</p></li>
+      <li><h3>Build</h3><span class="when" data-estimate>2 to 10 weeks</span><p>A progress update and a version to try every Friday.</p></li>
+      <li><h3>Handover</h3><span class="when" data-estimate>Final week</span><p>Launch, staff training, and all code and logins passed to you.</p></li>
+      <li><h3>Support</h3><span class="when">Ongoing</span><p>Free fixes for the first 30 days, then an optional care plan.</p></li>
+    </ol>
+    <div class="docs-3">
+      <figure>
+        <div class="doc" role="img" aria-label="Example document: a project proposal listing what will be built, a six-week timeline and a fixed price of 400,000 shillings.">
+          <div class="doc-in" aria-hidden="true">
+            <div class="doc-head"><img src="assets/brand/sonath-mark-dark.svg" width="94" height="112" alt=""><div class="doc-kind"><b>Proposal</b>Ref. SON-014</div></div>
+            <div class="doc-title">Orders and stock system</div>
+            <div class="doc-sub">Prepared for Example Hardware Ltd, 13 October 2026</div>
+            <div class="doc-h">What we will build</div>
+            <ul class="doc-list">
+              <li>Order entry on phone and desktop</li>
+              <li>Stock levels with low-stock alerts</li>
+              <li>Customer accounts and invoices</li>
+              <li>Weekly sales report</li>
+            </ul>
+            <div class="doc-h">Timeline: 6 weeks</div>
+            <div class="doc-gantt">
+              <div><span>Design</span><span class="track"><i class="bar" style="grid-column:1 / 2"></i></span></div>
+              <div><span>Orders and stock</span><span class="track"><i class="bar" style="grid-column:2 / 5"></i></span></div>
+              <div><span>Invoices, reports</span><span class="track"><i class="bar" style="grid-column:4 / 6"></i></span></div>
+              <div><span>Import, training</span><span class="track"><i class="bar gold" style="grid-column:6 / 7"></i></span></div>
+              <div><span></span><span class="weeks"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span></span></div>
+            </div>
+            <div class="doc-h">Fixed price</div>
+            <div class="doc-rows">
+              <div><span>Design and prototype</span><span>KES 60,000</span></div>
+              <div><span>Orders and stock</span><span>KES 210,000</span></div>
+              <div><span>Invoices and reports</span><span>KES 90,000</span></div>
+              <div><span>Data import and training</span><span>KES 40,000</span></div>
+              <div class="total"><span>Total</span><span>KES 400,000</span></div>
+            </div>
+            <div class="doc-foot"><span>Valid for 30 days</span><span>Page 1 of 3</span></div>
+          </div>
+        </div>
+        <figcaption>The proposal: scope, timeline and a fixed price.</figcaption>
+      </figure>
+      <figure>
+        <div class="doc" role="img" aria-label="Example document: a weekly progress update for week 3 of 6, listing work finished, work planned and one decision needed from the client.">
+          <div class="doc-in" aria-hidden="true">
+            <div class="doc-head"><img src="assets/brand/sonath-mark-dark.svg" width="94" height="112" alt=""><div class="doc-kind"><b>Weekly update</b>Week 3 of 6</div></div>
+            <div class="doc-title">Friday 6 November 2026</div>
+            <div class="doc-sub">Orders and stock system, Example Hardware Ltd</div>
+            <div class="doc-progress"><i style="width:50%"></i></div>
+            <div class="doc-meta"><span>50% complete</span><span>On schedule, on budget</span></div>
+            <div class="doc-h">Finished this week</div>
+            <ul class="doc-list">
+              <li>Order entry screen, phone and desktop</li>
+              <li>Stock level updates on every sale</li>
+              <li>1,240 products imported from your spreadsheet</li>
+            </ul>
+            <div class="doc-h">Planned for next week</div>
+            <ul class="doc-list todo">
+              <li>Invoices and customer statements</li>
+              <li>Low-stock alerts</li>
+            </ul>
+            <div class="doc-h">We need from you</div>
+            <div class="doc-flag"><b>By Tuesday:</b> confirm the current price list so we can load it.</div>
+            <div class="doc-foot"><span>Test link sent by email</span><span>Next update: 13 Nov</span></div>
+          </div>
+        </div>
+        <figcaption>The weekly update: done, next, and what we need from you.</figcaption>
+      </figure>
+      <figure>
+        <div class="doc" role="img" aria-label="Example document: a handover pack listing the code, accounts, documents and training passed to the client at the end of a project.">
+          <div class="doc-in" aria-hidden="true">
+            <div class="doc-head"><img src="assets/brand/sonath-mark-dark.svg" width="94" height="112" alt=""><div class="doc-kind"><b>Handover pack</b>27 November 2026</div></div>
+            <div class="doc-title">Everything is now yours</div>
+            <div class="doc-sub">Orders and stock system, Example Hardware Ltd</div>
+            <div class="doc-h">Transferred to you</div>
+            <ul class="doc-list">
+              <li>Source code repository</li>
+              <li>Hosting and domain accounts in your name</li>
+              <li>Admin logins and passwords</li>
+              <li>Database backup and restore guide</li>
+            </ul>
+            <div class="doc-h">Training and documents</div>
+            <ul class="doc-list">
+              <li>User guide for staff (PDF)</li>
+              <li>Recorded training session</li>
+              <li>Admin guide: adding users and products</li>
+            </ul>
+            <div class="doc-h">After launch</div>
+            <div class="doc-rows">
+              <div><span>Fixes for any faults</span><span>30 days, no charge</span></div>
+              <div><span>Monthly care plan</span><span>Optional</span></div>
+            </div>
+            <div class="doc-foot"><span>Signed off by both parties</span><span>Page 1 of 2</span></div>
+          </div>
+        </div>
+        <figcaption>The handover pack: code, logins, guides and training.</figcaption>
+      </figure>
+    </div>
+    <p class="mt-l"><span class="badge">Example</span> <span class="muted">&nbsp;Sample documents with illustrative names, dates and figures.</span> &nbsp;<a class="link arrow" href="process.html">See the full process</a></p>
+  </div>
+</section>
+
+<!-- =========================================================
+     QUESTIONS
+     ========================================================= -->
+<section class="section">
+  <div class="wrap faq-grid">
+    <div>
+      <h2>Common questions</h2>
+      <p>Something else on your mind? <a class="link" href="contact.html">Ask us directly</a>.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>How much does a project cost?</summary>
+        <p>Websites start from <span data-estimate>KES 60,000</span> and business systems from <span data-estimate>KES 350,000</span>. The exact figure depends on scope. You get a fixed price in a written proposal before any work begins.</p>
+      </details>
+      <details>
+        <summary>How long does it take?</summary>
+        <p>Most websites take <span data-estimate>2 to 4 weeks</span>. Business systems take <span data-estimate>6 to 12 weeks</span>, depending on how much there is to build. The proposal includes a week-by-week timeline.</p>
+      </details>
+      <details>
+        <summary>Who owns the code?</summary>
+        <p>You do. Once the project is paid in full, the source code, accounts and documentation are transferred to you. You are free to take it to another developer.</p>
+      </details>
+      <details>
+        <summary>What do you need from us?</summary>
+        <p>One person who can answer questions and approve work each week. We also need your content: text, photos, price lists and any spreadsheets you use today.</p>
+      </details>
+      <details>
+        <summary>What happens after launch?</summary>
+        <p>We fix any faults for <span data-estimate>30 days</span> at no charge. After that you can take a monthly care plan, or run things yourself with the documentation we hand over.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CALL TO ACTION
+     ========================================================= -->
+<section class="cta dark">
+  <div class="wrap cta-grid">
+    <div>
+      <h2>Have a project in mind?</h2>
+      <p>Tell us what you need. We reply within one working day with questions or a time to talk.</p>
+    </div>
+    <div class="btn-row">
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
+      <a href="https://wa.me/254768426579?text=Hi%20Sonath%2C%20I%27d%20like%20to%20talk%20about%20a%20project." class="btn btn-ghost" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER (identical on every page)
+     ========================================================= -->
+<footer class="site-footer dark">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="Sonath home">
+          <img class="brand-mark" src="assets/brand/sonath-mark.svg" width="94" height="112" alt="">
+          <img class="brand-word" src="assets/brand/sonath-wordmark.svg" width="1164" height="100" alt="Sonath">
+        </a>
+        <p class="footer-tag">Design. Build. Launch.</p>
+        <p class="muted">A two-founder software studio in Kenya. Websites and business systems, built by the people you talk to.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Site</h2>
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Process</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="mailto:sonathsolutions@gmail.com">sonathsolutions@gmail.com</a></li>
+          <li><a href="tel:+254768426579">+254 768 426 579</a></li>
+          <li><a href="https://wa.me/254768426579" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Elsewhere</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/sonathsolutions" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/davis-wabacha" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <ul class="footer-links">
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-      </ul>
-      <div class="footer-meta">
-        <p class="footer-copy">&copy; 2026 Sonath. All rights reserved.</p>
-        <p class="footer-credit">Built by Davis Wabacha &amp; Wayne Wonder.</p>
-      </div>
+      <p>&copy; 2026 Sonath Solutions. Built by Davis Wabacha &amp; Wayne Wonder.</p>
+      <p><a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a></p>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script src="js/contact-form.js"></script>
 </body>
 </html>
