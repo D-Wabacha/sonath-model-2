@@ -10,6 +10,7 @@
     17. Pricing and packages    20. Guides (articles)
     18. Estimator               21. Motion
     19. Industry pages          22. WhatsApp button
+                                23. Demo sites
    ========================================================= */
 
 /* ---------- 1. Tokens ---------- */
@@ -932,3 +933,77 @@ figure figcaption .badge{ margin-right:.35rem; }
 .est-peek .arrow{ font-size:.85rem; color:var(--on-dark-2); }
 @media (min-width:980px){ .est-peek{ display:none; } }
 @media (max-width:979px){ .est-active .wa-float{ transform:translateY(160%); } }
+
+/* ---------- 23. Demo sites ----------
+   Fictional businesses built by Sonath (demos.html, and the switcher on the home page).
+   Always labelled "Demo" so they are never mistaken for client work. */
+
+/* Industry chips that jump to each demo */
+.demo-nav{ position:sticky; top:68px; z-index:30; background:var(--paper); border-bottom:1px solid var(--line); }
+.demo-nav .wrap{ display:flex; gap:.5rem; overflow-x:auto; padding-block:.75rem; scrollbar-width:none; }
+.demo-nav .wrap::-webkit-scrollbar{ display:none; }
+.demo-nav a{
+  flex:none; display:inline-flex; align-items:center; gap:.5rem; padding:.45rem .9rem; border:1px solid var(--line); border-radius:99px;
+  background:var(--white); text-decoration:none; font-size:.9rem; font-weight:500; white-space:nowrap;
+}
+.demo-nav a:hover{ border-color:var(--text); }
+.demo-nav a small{ font-family:var(--font-mono); font-size:.68rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+
+.demo{ scroll-margin-top:130px; }
+.demo-top{ display:grid; gap:2.5rem 4rem; align-items:center; }
+@media (min-width:980px){ .demo-top{ grid-template-columns:minmax(0,5fr) minmax(0,7fr); } .demo.flip .demo-top > figure{ order:-1; } }
+.demo-top h2{ margin-block:.9rem 1rem; }
+.demo-top > div > p{ color:var(--muted); max-width:50ch; }
+.dark .demo-top > div > p{ color:var(--on-dark-2); }
+.demo-top .btn-row{ margin-top:1.75rem; }
+.demo-for{ margin-top:1.25rem; }
+
+.demo-body{ display:grid; gap:2rem 3rem; margin-top:clamp(2.5rem, 5vw, 3.5rem); }
+@media (min-width:900px){ .demo-body{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); align-items:start; } }
+.demo-body .ticks{ font-size:.97rem; }
+@media (min-width:640px){ .demo-body .ticks{ grid-template-columns:repeat(2, minmax(0,1fr)); column-gap:2rem; } }
+.demo-body .sub{ margin-bottom:1rem; }
+.dark .demo-body .sub{ color:var(--on-dark-2); }
+
+/* "Try this" card: small tasks a visitor can do on the live demo */
+.try{ border:1px dashed #b9b9b2; border-radius:var(--frame); padding:1.4rem 1.5rem; background:var(--white); }
+.dark .try{ background:var(--ink-2); border-color:rgba(255,255,255,.22); }
+.try .sub{ display:block; color:var(--bronze); margin-bottom:1rem; }
+.dark .try .sub{ color:var(--gold); }
+.try ol{ counter-reset:t; display:grid; gap:.8rem; }
+.try li{ counter-increment:t; position:relative; padding-left:2.2rem; font-size:.96rem; }
+.try li::before{
+  content:counter(t); position:absolute; left:0; top:.05rem; width:1.5rem; height:1.5rem; border-radius:50%;
+  display:grid; place-items:center; background:var(--ink); color:var(--gold); font-family:var(--font-mono); font-size:.75rem;
+}
+.dark .try li::before{ background:var(--gold); color:var(--ink); }
+.try .link{ display:inline-block; margin-top:1.1rem; font-size:.95rem; }
+
+.demo-shots{ display:grid; gap:1.75rem; margin-top:clamp(2rem, 4vw, 3rem); }
+@media (min-width:760px){ .demo-shots{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
+.demo-shots figure{ min-width:0; }
+
+/* Home page: one browser, four demos */
+.switch-tabs{ display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.75rem; }
+.switch-tabs button{
+  display:inline-flex; flex-direction:column; align-items:flex-start; gap:.1rem; padding:.6rem 1rem; cursor:pointer;
+  background:transparent; color:var(--on-dark); border:1px solid rgba(255,255,255,.22); border-radius:var(--radius); text-align:left;
+  transition:background-color .16s ease, border-color .16s ease, color .16s ease;
+}
+.switch-tabs button small{ font-family:var(--font-mono); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--on-dark-2); }
+.switch-tabs button b{ font-weight:500; font-size:.98rem; }
+.switch-tabs button:hover{ border-color:var(--on-dark); }
+.switch-tabs button[aria-selected="true"]{ background:var(--gold); border-color:var(--gold); color:var(--ink); }
+.switch-tabs button[aria-selected="true"] small{ color:var(--ink); opacity:.7; }
+.switch-panel{ display:grid; gap:2rem 3.5rem; align-items:center; }
+.switch-panel[hidden]{ display:none; }
+.switch-panel.is-entering .device-stack{ animation:rise .5s cubic-bezier(.2,.7,.2,1); }
+@media (min-width:980px){ .switch-panel{ grid-template-columns:minmax(0,7fr) minmax(0,4fr); } }
+.switch-panel h3{ font-size:clamp(1.4rem, 2.4vw, 1.8rem); margin-block:.8rem .7rem; }
+.switch-panel p{ color:var(--on-dark-2); }
+.switch-panel .try{ margin-top:1.4rem; }
+.switch-panel .btn-row{ margin-top:1.5rem; }
+@media (prefers-reduced-motion:reduce){ .switch-panel.is-entering .device-stack{ animation:none; } }
+.dark .note{ color:var(--on-dark-2); }
+.dark .kit{ background:var(--ink-2); box-shadow:0 0 0 1px var(--line-dark); }
+@media (max-width:699px){ .switch-tabs{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); } }

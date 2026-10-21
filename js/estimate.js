@@ -251,5 +251,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   form.addEventListener('change', update);
   form.addEventListener('submit', function (e) { e.preventDefault(); });
-  setPages(0);
+  setPages(parseInt(params.get('pages'), 10) || 0);
 });

@@ -26,6 +26,7 @@ The site is plain static HTML, CSS and JavaScript. There is no framework, no bui
 ├── work.html             Work (case study list and example build)
 ├── royal-tavern.html     Case study: Royal Tavern Hotel
 ├── wits-garden.html      Case study: Wits Garden Educational Centre
+├── demos.html            Demo sites: four fictional businesses Sonath built (school, property, clinic, hotel)
 ├── services.html         Services, timelines and starting prices
 ├── pricing.html          Website packages, other offers, care plans and the price estimator
 ├── hotels.html           Industry page: hotels, lodges and guesthouses
@@ -44,6 +45,7 @@ The site is plain static HTML, CSS and JavaScript. There is no framework, no bui
 │   ├── brand/            Logo mark, wordmark and app icon (SVG)
 │   ├── icons/            PNG app icons
 │   ├── work/             Screenshots of client sites (WebP)
+│   ├── demos/            Screenshots of the demo sites (WebP)
 │   ├── favicon.ico
 │   └── og-image.png      Preview image for links shared on WhatsApp and social media
 ├── manifest.json
@@ -60,6 +62,17 @@ Figures that are estimates (prices, timelines, reply times) are marked in the HT
 ```bash
 grep -n "data-estimate" *.html
 ```
+
+### Demo sites
+
+The four demo sites (Cedarfield Academy, Havenstone Realty, WillowCare Clinics and Amani House) are fictional businesses, so they are always labelled "Demo" and kept apart from real client work. They appear on:
+
+* `demos.html`: one section per demo, with what it shows and "Try this" steps
+* `index.html`: the "Try a finished website in your industry" switcher (the same text, shorter)
+* `work.html`: four cards under the client projects
+* `hotels.html` (Amani House), `schools.html` (Cedarfield Academy) and the kits on `pricing.html`
+
+If a demo changes, check its "Try this" steps still work, and retake its screenshots in `assets/demos/` (desktop 1440 x 900, phone 390 x 844 at 2x, saved as WebP).
 
 ### Prices
 

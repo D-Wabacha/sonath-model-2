@@ -54,13 +54,14 @@
      ========================================================= -->
 <header class="site-header">
   <div class="wrap">
-    <a href="index.html" class="brand" aria-label="Sonath home">
+    <a href="index.html" class="brand brand-intro" aria-label="Sonath home">
       <img class="brand-mark" src="assets/brand/sonath-mark.svg" width="94" height="112" alt="">
       <img class="brand-word" src="assets/brand/sonath-wordmark.svg" width="1164" height="100" alt="Sonath">
     </a>
     <nav class="nav" aria-label="Primary">
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
       <a href="process.html">Process</a>
       <a href="about.html">About</a>
     </nav>
@@ -76,6 +77,7 @@
     <nav aria-label="Primary mobile">
       <a href="work.html">Work</a>
       <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
       <a href="process.html">Process</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
@@ -90,7 +92,7 @@
      ========================================================= -->
 <section class="hero dark">
   <div class="wrap hero-grid">
-    <div>
+    <div class="hero-intro">
       <p class="label">Design. Build. Launch.</p>
       <h1>Websites and business software, built by the two people you talk to.</h1>
       <p class="lede">Sonath is a two-founder software studio in Kenya. You get a fixed price before work starts, an update every week, and the full source code at handover.</p>
@@ -98,6 +100,7 @@
         <a href="contact.html" class="btn btn-primary">Start a project</a>
         <a href="work.html" class="btn btn-ghost">See our work</a>
       </div>
+      <p class="hero-note">Websites from <span data-estimate>KES 25,000</span>. <a class="link" href="pricing.html">See packages and prices</a></p>
     </div>
     <figure>
       <div class="device-stack">
@@ -198,6 +201,147 @@
     </article>
   </div>
 </section>
+
+<!-- =========================================================
+     DEMO SITES
+     Fictional businesses built by Sonath. The text matches demos.html,
+     so change both together. js/main.js turns this into tabs.
+     ========================================================= -->
+<section class="section dark" id="demos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="label">Demo sites</p>
+        <h2>Try a finished website in your industry</h2>
+      </div>
+      <p>We built four complete websites for imagined Kenyan businesses. Pick the one closest to yours and click around. Nothing you type is sent.</p>
+    </div>
+    <div class="switch-tabs" role="tablist" aria-label="Demo sites" hidden>
+      <button type="button" role="tab" id="demo-tab-cedarfield" aria-controls="demo-panel-cedarfield" aria-selected="true"><small>School</small><b>Cedarfield Academy</b></button>
+      <button type="button" role="tab" id="demo-tab-havenstone" aria-controls="demo-panel-havenstone" aria-selected="false" tabindex="-1"><small>Property</small><b>Havenstone Realty</b></button>
+      <button type="button" role="tab" id="demo-tab-willowcare" aria-controls="demo-panel-willowcare" aria-selected="false" tabindex="-1"><small>Clinic</small><b>WillowCare Clinics</b></button>
+      <button type="button" role="tab" id="demo-tab-amani" aria-controls="demo-panel-amani" aria-selected="false" tabindex="-1"><small>Hotel</small><b>Amani House</b></button>
+    </div>
+    <div class="switch-panel" role="tabpanel" id="demo-panel-cedarfield" aria-labelledby="demo-tab-cedarfield">
+      <figure>
+        <div class="device-stack">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">cedarfieldacademy.netlify.app</span></div>
+            <img src="assets/demos/cedarfield-home.webp" width="1440" height="900" alt="Home page of the Cedarfield Academy demo school website" loading="lazy" decoding="async">
+          </div>
+          <div class="phone">
+            <img src="assets/demos/cedarfield-mobile.webp" width="780" height="1688" alt="Cedarfield Academy demo on a phone, with call, WhatsApp and enquire buttons" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </figure>
+      <div>
+        <span class="badge">Demo &middot; fictional school</span>
+        <h3>Cedarfield Academy</h3>
+        <p>A school website that takes a family from first look to admissions enquiry.</p>
+        <div class="try">
+          <p class="sub">Try this</p>
+          <ol>
+            <li>Open <b>Admissions</b> and read the five steps a family goes through.</li>
+            <li>On <b>School Life</b>, filter the clubs by <b>STEM</b>.</li>
+          </ol>
+        </div>
+        <div class="btn-row">
+          <a href="https://cedarfieldacademy.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Open the demo</a>
+          <a href="demos.html#cedarfield" class="btn btn-ghost">What it shows</a>
+        </div>
+      </div>
+    </div>
+    <div class="switch-panel" role="tabpanel" id="demo-panel-havenstone" aria-labelledby="demo-tab-havenstone">
+      <figure>
+        <div class="device-stack">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">havenstones.netlify.app</span></div>
+            <img src="assets/demos/havenstone-home.webp" width="1440" height="900" alt="Home page of the Havenstone Realty demo property website, with a rent and buy search" loading="lazy" decoding="async">
+          </div>
+          <div class="phone">
+            <img src="assets/demos/havenstone-mobile.webp" width="780" height="1688" alt="Havenstone Realty demo on a phone, showing the property search" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </figure>
+      <div>
+        <span class="badge">Demo &middot; fictional property</span>
+        <h3>Havenstone Realty</h3>
+        <p>A property website where people search, shortlist and book a viewing themselves.</p>
+        <div class="try">
+          <p class="sub">Try this</p>
+          <ol>
+            <li>Pick a neighbourhood under <b>Search by area</b>, such as Lavington.</li>
+            <li>Open <b>All properties</b>, choose <b>Buy</b> and <b>4+ bedrooms</b>, then sort by price.</li>
+          </ol>
+        </div>
+        <div class="btn-row">
+          <a href="https://havenstones.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Open the demo</a>
+          <a href="demos.html#havenstone" class="btn btn-ghost">What it shows</a>
+        </div>
+      </div>
+    </div>
+    <div class="switch-panel" role="tabpanel" id="demo-panel-willowcare" aria-labelledby="demo-tab-willowcare">
+      <figure>
+        <div class="device-stack">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">willowcares.netlify.app</span></div>
+            <img src="assets/demos/willowcare-home.webp" width="1440" height="900" alt="Home page of the WillowCare Clinics demo clinic website, showing whether the clinic is open" loading="lazy" decoding="async">
+          </div>
+          <div class="phone">
+            <img src="assets/demos/willowcare-mobile.webp" width="780" height="1688" alt="WillowCare Clinics demo on a phone, with call, WhatsApp and enquire buttons" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </figure>
+      <div>
+        <span class="badge">Demo &middot; fictional clinic</span>
+        <h3>WillowCare Clinics</h3>
+        <p>A clinic website that is calm, clear, and careful with patient privacy.</p>
+        <div class="try">
+          <p class="sub">Try this</p>
+          <ol>
+            <li>Look at the top of the home page: it tells you whether the clinic is open right now.</li>
+            <li>Open <b>Services</b> and filter by <b>Dental</b> or <b>Diagnostics</b>.</li>
+          </ol>
+        </div>
+        <div class="btn-row">
+          <a href="https://willowcares.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Open the demo</a>
+          <a href="demos.html#willowcare" class="btn btn-ghost">What it shows</a>
+        </div>
+      </div>
+    </div>
+    <div class="switch-panel" role="tabpanel" id="demo-panel-amani" aria-labelledby="demo-tab-amani">
+      <figure>
+        <div class="device-stack">
+          <div class="browser">
+            <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">amanihouses.netlify.app</span></div>
+            <img src="assets/demos/amani-home.webp" width="1440" height="900" alt="Home page of the Amani House demo hotel website, with a date and guests booking bar" loading="lazy" decoding="async">
+          </div>
+          <div class="phone">
+            <img src="assets/demos/amani-mobile.webp" width="780" height="1688" alt="Amani House demo on a phone, with the booking bar" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </figure>
+      <div>
+        <span class="badge">Demo &middot; fictional hotel</span>
+        <h3>Amani House</h3>
+        <p>A hotel website that feels like the stay, and makes the booking enquiry easy.</p>
+        <div class="try">
+          <p class="sub">Try this</p>
+          <ol>
+            <li>Pick arrival and departure dates in the bar on the home page.</li>
+            <li>On <b>Rooms &amp; Suites</b>, show only <b>Suites</b>, or rooms for 4 or more guests.</li>
+          </ol>
+        </div>
+        <div class="btn-row">
+          <a href="https://amanihouses.netlify.app/" class="btn btn-primary" target="_blank" rel="noopener">Open the demo</a>
+          <a href="demos.html#amani" class="btn btn-ghost">What it shows</a>
+        </div>
+      </div>
+    </div>
+    <p class="note mt-l"><a class="link arrow" href="demos.html">See all four demos and what each one shows</a></p>
+  </div>
+</section>
+
 
 <!-- =========================================================
      WHAT WE BUILD
@@ -332,7 +476,7 @@
       <div class="example">
         <div class="browser">
           <div class="browser-bar" aria-hidden="true"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">orders.example.co.ke</span></div>
-          <div class="ui" role="img" aria-label="Example screen: an orders and stock dashboard showing this week's orders, unpaid invoices, low stock items and a list of recent orders.">
+          <div class="ui" data-live role="img" aria-label="Example screen: an orders and stock dashboard showing this week's orders, unpaid invoices, low stock items and a list of recent orders.">
             <div class="ui-in" aria-hidden="true">
               <div class="ui-side">
                 <div class="ui-org"><i>E</i>Example Hardware Ltd</div>
@@ -401,6 +545,44 @@
       </div>
       <figcaption><span class="badge">Example</span> Screens drawn to show the kind of system we build. Names and figures are illustrative.</figcaption>
     </figure>
+  </div>
+</section>
+
+<!-- =========================================================
+     PACKAGES
+     Prices must match pricing.html and js/estimate.js
+     ========================================================= -->
+<section class="section white">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Pick a starting point</h2>
+      <p>Three website packages, with prices on the page. Add what you need in the estimator and send it to us in one tap.</p>
+    </div>
+    <div class="pkgs">
+      <article class="pkg compact">
+        <p class="label">To get found</p>
+        <h3>Launch page</h3>
+        <p class="pkg-for">One strong page with your services, prices, location and a WhatsApp button.</p>
+        <p class="pkg-price"><small>From</small><b data-estimate>KES 25,000</b><span data-estimate>About 1 to 2 weeks</span></p>
+        <a href="pricing.html?pkg=launch#estimate" class="btn btn-line">Estimate this</a>
+      </article>
+      <article class="pkg compact dark">
+        <span class="badge pkg-flag">Where most businesses start</span>
+        <p class="label">To bring in enquiries</p>
+        <h3>Business site</h3>
+        <p class="pkg-for">Up to 6 pages, help with the text, an enquiry form and search engine set-up.</p>
+        <p class="pkg-price"><small>From</small><b data-estimate>KES 60,000</b><span data-estimate>About 2 to 4 weeks</span></p>
+        <a href="pricing.html?pkg=business#estimate" class="btn btn-primary">Estimate this</a>
+      </article>
+      <article class="pkg compact">
+        <p class="label">To take bookings</p>
+        <h3>Bookings site</h3>
+        <p class="pkg-for">Booking requests with dates and options, and a page where staff confirm them.</p>
+        <p class="pkg-price"><small>From</small><b data-estimate>KES 150,000</b><span data-estimate>About 4 to 6 weeks</span></p>
+        <a href="pricing.html?pkg=bookings#estimate" class="btn btn-line">Estimate this</a>
+      </article>
+    </div>
+    <p class="note mt-l">Running a hotel or a school? See the <a class="link" href="hotels.html">hospitality kit</a> or the <a class="link" href="schools.html">school kit</a>. Already have a website that needs work? Try a one-week <a class="link" href="pricing.html#fixit">Fix-it sprint</a>.</p>
   </div>
 </section>
 
@@ -527,7 +709,7 @@
     <div class="faq">
       <details>
         <summary>How much does a project cost?</summary>
-        <p>Websites start from <span data-estimate>KES 60,000</span> and business systems from <span data-estimate>KES 350,000</span>. The exact figure depends on scope. You get a fixed price in a written proposal before any work begins.</p>
+        <p>Websites start from <span data-estimate>KES 25,000</span> for a one-page site and <span data-estimate>KES 60,000</span> for a full business site. Business systems start from <span data-estimate>KES 350,000</span>. Try the <a class="link" href="pricing.html#estimate">price estimator</a> for your project. You get a fixed price in a written proposal before any work begins.</p>
       </details>
       <details>
         <summary>How long does it take?</summary>
@@ -585,10 +767,23 @@
         <h2>Site</h2>
         <ul>
           <li><a href="work.html">Work</a></li>
+          <li><a href="demos.html">Demo sites</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="process.html">Process</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Who we build for</h2>
+        <ul>
+          <li><a href="hotels.html">Hotels and lodges</a></li>
+          <li><a href="schools.html">Schools</a></li>
+          <li><a href="demos.html#willowcare">Clinics</a></li>
+          <li><a href="demos.html#havenstone">Property agents</a></li>
+          <li><a href="services.html#systems">Shops and suppliers</a></li>
+          <li><a href="guides.html">Guides</a></li>
         </ul>
       </div>
       <div class="footer-col">
